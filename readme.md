@@ -23,7 +23,7 @@ Open your powershell command prompt to the root folder and run this command :
 
 After the command execution has finished, you can access the chat by 2 ways :
 
-|web |https://localhost:8000/ |
+|web |https://localhost/ |
 |----------|-------------------------------------|
 |**telnet**| **host**: localhost / **port**: 9000|
 

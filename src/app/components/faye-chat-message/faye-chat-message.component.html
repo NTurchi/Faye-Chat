@@ -1,0 +1,4 @@
+<div *ngIf="!message.muted" class="row message" [ngClass]="{'sent': !incomeMessage, 'replies': incomeMessage}">
+  <span class="sender" *ngIf="!sameSenderThanPreviousMsg" >{{ message.sender }}</span>
+  <p [ngStyle]="{'background-color': incomeMessage ? message.color : 'black'}">{{ message.content }}</p>
+</div>

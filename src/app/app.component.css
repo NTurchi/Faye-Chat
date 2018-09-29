@@ -1,0 +1,23 @@
+#main-divider {
+    margin-bottom: 2%;
+}
+
+#main-title {
+    text-align: center;
+}
+
+.username-small {
+    color: red;
+}
+
+.main-container, .main-app {
+    height: 100%;
+}
+
+#main-enter {
+    text-align: center;
+}
+
+.main-input {
+    height: 85%;
+}

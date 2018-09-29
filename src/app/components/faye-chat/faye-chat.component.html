@@ -1,0 +1,17 @@
+<div class="faye-chat">
+  <div class="messages-wrapper">
+    <div class="messages">
+      <app-faye-chat-message *ngFor="let message of messages; let i = index" [message]="message" [incomeMessage]="message.sender !== username" [sameSenderThanPreviousMsg]="(i > 0 && message.sender === messages[(i - 1)].sender)"></app-faye-chat-message> 
+    </div>
+    <div class="input-message">
+        <div class="input-field col s12 m12">
+          <input type="text" class="form-control input-text-message" (keyup.enter)="sendMessage()" [(ngModel)]="currentMessage" id="message">
+          <label for="username">Message</label>
+          <a class="btn-floating btn-large waves-effect waves-light green input-send-button" (click)="sendMessage()"><i class="material-icons">send</i></a>
+        </div>
+    </div>
+  </div>
+  <div class="usernames-wrapper">
+    <app-faye-chat-user *ngFor="let username of usersInChat;" [username]="username"></app-faye-chat-user>
+  </div>
+</div>

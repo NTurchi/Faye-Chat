@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+
+
+.is-invalid {
+    border: 2px solid red;
+}
+
+html, body {
+    height: 98%;
+}

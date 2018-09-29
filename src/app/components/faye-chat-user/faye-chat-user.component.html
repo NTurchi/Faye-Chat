@@ -1,0 +1,6 @@
+<div class="row user-info">
+  <p class="username">{{ username }}</p>
+  <a class="btn-floating btn-large waves-effect waves-light green mute-icon" *ngIf="!isMute" (click)="mute()"><i class="material-icons">mic</i></a>
+  <a class="btn-floating btn-large waves-effect waves-light red mute-icon" *ngIf="isMute" (click)="unmute()"><i class="material-icons">mic_off</i></a>
+  <a class="btn-floating btn-large waves-effect waves-light color-icon" (click)="changeColor()" [ngStyle]="{'background-color': colors[currentColorIndex]}"><i class="material-icons"></i></a>
+</div>

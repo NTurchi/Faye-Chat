@@ -1,0 +1,23 @@
+.user-info {
+    position: relative;
+    width: 100%;
+    left: 0;
+    height: 8%;
+}
+
+.username {
+    position: absolute;
+    left: 3%;
+    top: 4%;
+    color: black;
+}
+
+.color-icon {
+    position: absolute !important;
+    right: 2% !important;
+}
+
+.mute-icon {
+    position: absolute !important;
+    right: 20% !important;
+}

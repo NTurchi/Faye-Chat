@@ -1,0 +1,26 @@
+<div class="container main-app">
+  <div class="col s10 offset-s1 m10 offset-m1 main-container">
+    <h2 id="main-title">Faye Chat</h2>
+    <div class="divider" id="main-divider"></div>
+    <div class="row main-input" *ngIf="!username">
+      <div class="row">
+        <form #f="ngForm" [formGroup]="form">
+          <div class="input-field col s8 offset-s2 m4 offset-m4">
+              <input type="text" class="validate" (keyup.enter)="enter()" class="form-control" [ngClass]="{'is-invalid': !form.get('username').valid}" id="username" formControlName="username">
+              <label for="username">Username</label>
+              <div *ngIf="form.get('username').touched">
+                <small *ngIf="usernameIsInvalid()" class="form-text username-small">
+                  Username must be between 3 and 15 characters long
+                </small>        
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="row" id="main-enter">
+        <a class="waves-effect waves-light btn" [ngClass]="{'disabled': usernameIsInvalid()}" (click)="enter()">Enter in the chat</a>
+      </div>
+    </div>
+    <app-faye-chat *ngIf="username" [username]="username"></app-faye-chat>
+  </div>
+</div>
+

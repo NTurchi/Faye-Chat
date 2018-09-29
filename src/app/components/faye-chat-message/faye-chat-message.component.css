@@ -1,0 +1,41 @@
+.sender {    
+    display: block;
+    color: #000000;
+    font-size: 9pt;
+    padding-top: 5px !important;
+}
+
+.replies .sender {
+    padding: 0px 15px 3px 5px;
+}
+
+.sent .sender {
+    text-align: right;
+    padding: 5px 8px 3px 0px;
+}
+
+div.replies p {
+    color: white;
+    float: left;
+}
+
+div.sent p {
+    background: #0000;
+    color: white;
+    float: right;
+}
+
+.message {
+    margin-bottom: 0px;
+} 
+
+.message p {
+    display: block;
+    padding: 10px 15px;
+    word-wrap:break-word;
+    border-radius: 7px;
+    line-height: 130%;
+    max-width: 70%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
